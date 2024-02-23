@@ -9,7 +9,7 @@ import requests
 from io import BytesIO
 
 cogs = ['hello']
-MYTOKEN = os.environ['MYTOKEN']
+MYTOKEN = os.environ.get['MYTOKEN']
 TOKEN = MYTOKEN
 client = commands.Bot(command_prefix='$', intents=discord.Intents.all())
 remove_bg_api_key = 'SkYd9kP4Bg9cAxKHEwEiC69X'
